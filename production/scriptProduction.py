@@ -9,10 +9,12 @@ lessdata = dataframe[['Country', 'Year', 'Value']]
 country_list = lessdata.Country.unique().tolist()
 year_list = lessdata.Year.unique().tolist()
 
+
 def find_sum(country, year):
     country_mask = lessdata['Country'] == country
     year_mask = lessdata['Year'] == year
     return lessdata[(country_mask) & (year_mask)].Value.sum()
+
 
 def create_csv():
     with open('modifiedMeatProduction.csv', 'w', newline='') as f:
@@ -22,5 +24,3 @@ def create_csv():
             for year_row in year_list:
                 csv_writer.writerow(
                     [country_row, year_row, find_sum(country_row, year_row)])
-
-create_csv()
