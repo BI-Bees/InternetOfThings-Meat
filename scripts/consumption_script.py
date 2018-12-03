@@ -1,7 +1,7 @@
 import csv
 import pandas as pd
 
-file_name = "originalMeatConsumption.csv"
+file_name = "../dataset/original_consumption.csv"
 dataframe = pd.read_csv(file_name, delimiter=",")
 lessdata = dataframe[['Country', 'TIME', 'Measure', 'Value']]
 lessdata = lessdata.drop(lessdata[lessdata.Measure == 'Thousand tonnes'].index)
@@ -18,10 +18,12 @@ def find_sum(country, year):
 
 
 def create_csv():
-    with open('modifiedMeatConsumption.csv', 'w', newline='') as f:
+    with open('../dataset/modified_consumption.csv', 'w', newline='') as f:
         csv_writer = csv.writer(f)
         csv_writer.writerow(['Country', 'Year', 'Consumption'])
         for country_row in country_list:
             for year_row in year_list:
                 csv_writer.writerow(
                     [country_row, year_row, find_sum(country_row, year_row)])
+
+create_csv()
