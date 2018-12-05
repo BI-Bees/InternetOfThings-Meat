@@ -338,6 +338,8 @@ def line_chart():
 ```
 *** *Map.ipynb* ***
 
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/linechart.png "Merged Dataset")
+
 This now solves our other problem.
 
 # Other sources
