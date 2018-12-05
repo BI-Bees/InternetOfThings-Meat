@@ -53,8 +53,8 @@ Below is listed all the different datasources used in this project:
 
 *Below are images that shows data chosen in order to get the output we recived*
 
-![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/FAOSTAT_image1.png "FAOSTAT img1" | width=100)
-![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/FAOSTAT_image2.png "FAOSTAT img2" | width=100)
+![](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/FAOSTAT_image1.png | width=100)
+![](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/FAOSTAT_image2.png | width=100)
 
 # Technical documentation
 
