@@ -19,7 +19,63 @@ A project revolving around production and consumption of meat....
 
 # Process
 
-Goes here...
+## Meetings
+
+In this section we will go over the meetings we have had with our Innovation and Entrepreneurship group. 
+
+skriv her noget om at vi efter hvert møde brugte tid på at finde data om deres nye emner
+
+### 31/10/2018 - Introduction meeting 
+
+We were introduced to many different ideas during the introduction meeting that took place this day. Generally the Innovation and Entrepreneurship students did not have a very good idea, of what they wanted us to help them with. Some groups had very creative and unrealistic ideas, some had no idea what they wanted and some had ideas that were still relatively unrealistic but if pushed in the right direction ideas that could actually work.
+
+The group that caught our attention, wanted to do something with Meat and Internet of Things. They did not at this point have more than a couple of ideas, as to what they believed could be cool implementation. 
+
+One of the ideas was an an App that could monitor people’s eating habits in their homes. An App that would look into people’s refrigerators, so that they would know what people was eating and what they were throwing out. The idea sounded awesome, but it would not be something we could help them within the time-limit of this project. The assignment was not to create an application that could be installed in people’s houses, it was to analyze some data based on queries they would generate. 
+
+One of the more realistic ideas they had was figuring out how much meat is bought in danish supermarkets. This would be a more realistic approach and something where we could, if data supporting the query was found, actually do some analysing. We got very enthusiastic because this was one of the only things we had heard all day that actually seemed doable. 
+
+At the end of the meeting we agreed upon using Facebook Messenger for further communication. See section “Contact forum” for more information. And we planned a date for the first official meeting for next week. For next time they wanted us to think about ideas that would fit within our project, that supports data about food consumption, meat production and other things we thought could be interesting corresponding to meat. 
+
+### 07/11/2018 - First official meeting 
+
+This was a short 10-minute update meeting. We both told each other what we had thought about. We might have helped them a bit in changing the subject to “Production of Meat”. We believed it would be easier to find data supporting that. They wanted us to see if we could find data supporting the subject for next meeting. We planned a meeting for next week. 
+
+### 12/11/2018 - Showing of results, subject change RFID and LIFI
+
+The meeting started off by us showing them the different data we had found. Showing them various CSV-files showing food production in the world, statistics showing how likely people are to changing their meat eating habits estimated meat production in the next 10 years and much more. We showed them how we were able to obtain the various data-sets we found, by showing them Google queries and the different websites we were looking at. They had generated a document with a problem statement and various tags within the subject Internet of Things. The problem statement said:
+
+*“Using RFID tags and LIFI to streamline the supply chain (select category) in upstream and downstream inventories in Danish supermarkets”*
+
+They told us that they now wanted us to focus on food waste in danish supermarkets. We could ourselve select the category as seen above in the problem statement, whatever would be easiest to find data supporting. This of course made it a little harder for us because most of the data we had already found was now mostly unusable. We agreed upon a meeting next week. For the next meeting they would try and specify their problem statement more and we would try and find data yet again for the new direction they wanted to go. 
+
+### 14/11/2018 - Showing of results, subject change foodwaste
+
+The meetings started off by us showing the data we were able to find on the problem statement above. Apparently that had gotten another idea where the main topic would be food waste in Danish supermarkets. Their idea was to take a more innovative approach to how barcodes on various food items function. 
+
+Today it only shows the identification number of the product, but what if it could show stuff like expiry dates so that they somehow could link that to food waste in Danish supermarkets. 
+
+### 19/11/2018 - Showing our results, subject change to *Countries with most frequent RFID use*
+
+Once again we showed the data we had found. But now they wanted us to find data that would help them find out which countries use RFID the most. Their idea was that maybe this would be written in articles and such. Perhabs this is where we could find such data. 
+
+They also wanted to find data showing which countries today are most advanced in LIFI. 
+
+### 22/11/2018 - Subject change back to original subject 
+
+After consulting with our counselor we decided to go back to the original idea that was production and consumption of meat worldwide. This subject we already had data support and it would therefore actually be a subject where we finally could start programming. 
+
+Our goal was to create a world-map showing the production and consumption of meat in a specific year. They were totally onboard with the idea and said it would be cool and that it would be something that they actually could use in their report too. This could be tied together with food waste and therefore beneficial to their new subject. 
+
+### 29/11/2018 - Update meeting 
+
+Showing them our results from the production and consumption of meat datasets. Showing them different graph and explaining different ideas. They told us what they wanted to use our data for. 
+
+## Contact forum
+
+We agreed upon using Facebook Messenger as a contact forum. The decision was made because everyone in our group from both parties already uses Facebook Messenger. Selina Açıkel from the Innovation and Entrepreneurship course created the group and invited everyone. Below is a screenshot of the beginning of the group-chat. 
+
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/contact_forum.png "Contact forum")
 
 # Contract
 
