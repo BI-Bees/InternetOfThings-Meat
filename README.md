@@ -51,7 +51,7 @@ Billing set at: **1000 DKK / HOUR** *per person*
 | 22/11/2018 | 5,5 | 11000 |
 | 29/11/2018 | 5,5 | 11000 |
 
-**Consulting**
+**Furthermore work**
 
 | Hours | Price DKK |
 | ------------- | ------------- | 
@@ -63,7 +63,7 @@ Billing set at: **1000 DKK / HOUR** *per person*
 | ------------- | ------------- | 
 | Meetings | 6000 |
 | Work | 55000 |
-| Consulting | 30000 |
+| Furthermore work | 30000 |
 | **Total** | **91000** |
 
 # Final product
