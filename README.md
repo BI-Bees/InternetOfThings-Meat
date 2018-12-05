@@ -13,17 +13,23 @@
 
 # Introduction
 
-Goes here...
-
-A project revolving around production and consumption of meat....
+A project revolving around production and consumption of meat, and the process it took us to get to the result. 
 
 # Process
 
+## Collaboration summary
+
+During our collaboration with the Innovation and Entrepreneurship students we have had roughly 2 meetings a week. They would usually explain their ideas in the first one of the week, while in the second we would give them feedback on what we have queried and if they could use the data. We have also had some meeting where we have only discussed innovation topics. Unfortunately, we, as a team, could not focus primarily on a concrete topic, for which we - the consultants, could find dataset to provide a desired output. 
+
+The initial meeting was introductory, when we got to meet their idea related to the Internet of Things in the beginning that had to do also with meat. Later, we elaborated on meat consumption and production around the world.
+
+After 3 consecutive weeks, we had to take initiative in deciding what to work with for our project, so we picked the topic of meat. As a product of our project we aim to present a map with a list of countries for which we have a value for both consumption and production on the measure - kilogram per capita. As well as a graph with tendencies of the same values for the next few years.
+
 ## Meetings
 
-In this section we will go over the meetings we have had with our Innovation and Entrepreneurship group. 
+In this section we will go over the meetings we have had with our Innovation and Entrepreneurship group.
 
-skriv her noget om at vi efter hvert møde brugte tid på at finde data om deres nye emner
+After each of our meetings we have taken what was decided and tried to find data supporting their ideas.
 
 ### 31/10/2018 - Introduction meeting 
 
@@ -79,7 +85,34 @@ We agreed upon using Facebook Messenger as a contact forum. The decision was mad
 
 # Contract
 
-Goes here...
+This is the contract agreed upon from both Software-Developers and Innovation & Entrepreneurshipers.
+
+## Product
+
+The final product should show a world-map with different countries highlighed showing meat production and consumption, from a specific year within 1991-2013, based on data accumulated from OECD and FAOSTAT datasets. A non-specific chart should also be shown showcasing the evolution of total both meat production and consumption within the specified years. 
+
+
+## Pricing
+
+Consulting price set for: **1000 DKK / HOUR** *per person*
+
+## Team
+
+**Software-Developers**
+
+- Philip West Christiansen
+- Plamen Getsov
+
+**Innovation & Entrepreneurship**
+
+- Selina Açıkel
+- Betul Dal
+- Hamid Popal
+- Mohammed Samrawi
+
+## Delivery date
+
+Delivery is scheduled for friday the **7th** of **december 2018** at **12 am**.
 
 # Billing
 
