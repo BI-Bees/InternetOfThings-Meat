@@ -39,7 +39,21 @@ Goes here...
 
 # Data sources
 
-Goes here...
+Below is listed all the different datasources used in this project. 
+
+Author: OECD Data
+Description: Meat consumption around the world. 
+Usage: We got a big CSV file that we formatted into something we could use for the project. 
+Link: https://data.oecd.org/agroutput/meat-consumption.htm
+
+Author: FAOSTAT - Food and Agriculture Organization of the United Nations
+Description: Meat production around the world. 
+Usage: We got a big CSV file that we formatted into something we could use for the project. 
+Link: http://www.fao.org/faostat/en/#data/CL
+* Below are images that shows data chosen in order to get the output we recived*
+
+
+
 
 # Technical documentation
 
