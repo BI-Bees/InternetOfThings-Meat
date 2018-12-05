@@ -184,4 +184,162 @@ Below is listed all the different datasources used in this project:
 
 # Technical documentation
 
-Goes here...
+## Datasets formatting
+
+We have various datasets that can be in the dataset folder. 
+
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/dataset.png "Dataset")
+
+### Formatting original datasets
+
+We started off with the *original_production.csv* and *original_consumption.csv* CSV files/datasets. Both these datasets shows kg/pr/capita of meat either produced or consumed from year x to y in a specific country. Both these files contained more information than we needed. 
+
+Both files showed different kind of meats, we just wanted a sum of all meats, and we did not want all the headers. Therefore we created two new CSV files *modified_production.csv* and *modified_consumption.csv*. These newly created files only have three headers:
+
+| Country | Year | Production or Consumption |
+| ------------- | ------------- | ------------- |
+
+Below is a look into the *production_script.py* file that creates the *modified_production.csv* files. 
+
+```python
+import csv
+import pandas as pd
+
+file_name = "../dataset/original_production.csv"
+dataframe = pd.read_csv(file_name, delimiter=",")
+lessdata = dataframe[['Country', 'Year', 'Value']]
+
+# Creating lists
+country_list = lessdata.Country.unique().tolist()
+year_list = lessdata.Year.unique().tolist()
+
+
+def find_sum(country, year):
+    country_mask = lessdata['Country'] == country
+    year_mask = lessdata['Year'] == year
+    return lessdata[(country_mask) & (year_mask)].Value.sum()
+
+
+def create_csv():
+    with open('../dataset/modified_production.csv', 'w', newline='') as f:
+        csv_writer = csv.writer(f)
+        csv_writer.writerow(['Country', 'Year', 'Production'])
+        for country_row in country_list:
+            for year_row in year_list:
+                csv_writer.writerow(
+                    [country_row, year_row, find_sum(country_row, year_row)])
+```
+*** *production_script.py* ***
+
+The script takes in the *original_production.csv*, and by using pandas we create a new dataframe with the above mentioned three headers we need. We then have a function: 
+
+```python
+def find_sum(country, year):
+```
+*** *production_script.py* ***
+
+This function finds the sum of meat for a specific country in a specific year. With all this information we can now create create our new csv file by running the following method:
+
+```python
+def create_csv():
+```
+*** *production_script.py* ***
+
+The way we create the *modified_consumption.csv* file is almost the same, see *consumption_script.py* for furthermore reading. 
+
+### joining the datasets
+
+We now want to join our *modified_production.csv* and *modified_consumption.csv* files. We want to do this because we actually have different countries and different years in the two files. *modified_production.csv* have more countries listed than *modified_consumption.csv* for example, and we do not want this. 
+
+Therefore we are using *pandas.merge* function that makes us able to merge our two files together based on matching-parameters as shown below:
+
+```python
+matching_data = pd.merge(left=production, right=consumption, on=['Country','Year'])
+matching_data.to_csv('../dataset/joined.csv', sep =',')
+```
+*** *joined_script.py* ***
+
+We now have a new CSV file *joined.csv* that only contains countries and years that match our two files. 
+
+In order to make our dataset usable with pygal we need to have one more header that shows us the country-code for the specific country. Therefore we need to merge with one more file. This is shown below: 
+
+```python
+matching_data2 = pd.merge(left=joined, right=countries, on=['Country'])
+matching_data2.to_csv('../dataset/joined_w_countries.csv', sep =',')
+```
+*** *joined_script.py* ***
+
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/mergeddata.png "Merged Dataset")
+
+
+## Graphs
+
+We are *pygal* to help us display our data in graphs. We have used *Jupyter Notebook* to render our graphs aswell. The code below generates a world-map.
+
+```python
+def generate_map(year):
+    worldmap_chart = pygal.maps.world.World()
+    worldmap_chart.title = 'Production vs Consumption - Year ' + year
+    with open(data_file_name) as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if(row[3] == year):
+                worldmap_chart.add(row[2], {
+                str(row[6].lower()): [row[4], row[5]]
+            })
+        worldmap_chart.render_in_browser()
+```
+*** *Map.ipynb* ***
+
+The *def* takes in a *year* parameter and then plots all countries in the dataset and their production vs consumption on a big world-map, as shown below:
+
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/worldmap.png "Merged Dataset")
+
+This solves the first problem of our **Product** section in our **Contract**. The next is we want to show average production and consumption over the years. We have done this with a linechart. The code is as follows:
+
+```python
+def total_production(year):
+    total_production = 0.0
+    sum = 0
+    firstline = True
+    with open(data_file_name) as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if firstline:
+                firstline = False
+                continue
+            if(int(row[3]) == year):
+                total_production += float(row[4])
+                sum = sum + 1
+    return total_production / sum
+
+def total_consumption(year):
+    total_consumption = 0.0
+    sum = 0
+    firstline = True
+    with open(data_file_name) as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if firstline:
+                firstline = False
+                continue
+            if(int(row[3]) == year):
+                total_consumption += float(row[5])
+                sum = sum + 1
+    return total_consumption / sum
+
+def line_chart():
+    line_chart = pygal.Line()
+    line_chart.title = 'Prodcution and Consumption over the years'
+    line_chart.x_labels = map(str, range(1991, 2014))
+    line_chart.add('Production', [total_consumption(1991), total_consumption(1992), total_consumption(1993), total_consumption(1994), total_consumption(1995), total_consumption(1996), total_consumption(1997), total_consumption(1998), total_consumption(1999), total_consumption(2000), total_consumption(2001), total_consumption(2002), total_consumption(2003), total_consumption(2004), total_consumption(2005), total_consumption(2006), total_consumption(2007), total_consumption(2008), total_consumption(2009), total_consumption(2010), total_consumption(2011), total_consumption(2012), total_consumption(2013)])
+    line_chart.add('Consumption',  [total_production(1991), total_production(1992), total_production(1993), total_production(1994), total_production(1995), total_production(1996), total_production(1997), total_production(1998), total_production(1999), total_production(2000), total_production(2001), total_production(2002), total_production(2003), total_production(2004), total_production(2005), total_production(2006), total_production(2007), total_production(2008), total_production(2009), total_production(2010), total_production(2011), total_production(2012), total_production(2013)])
+    line_chart.render_in_browser()
+```
+*** *Map.ipynb* ***
+
+This now solves our other problem.
+
+# Other sources
+
+I am thinking here we add all of our other sources we found and the google queries etc?
