@@ -17,6 +17,14 @@ A project revolving around production and consumption of meat, and the process i
 
 # Process
 
+## Collaboration summary
+
+During our collaboration with the Innovation and Entrepreneurship students we have had roughly 2 meetings a week. They would usually explain their ideas in the first one of the week, while in the second we would give them feedback on what we have queried and if they could use the data. We have also had some meeting where we have only discussed innovation topics. Unfortunately, we, as a team, could not focus primarily on a concrete topic, for which we - the consultants, could find dataset to provide a desired output. 
+
+The initial meeting was introductory, when we got to meet their idea related to the Internet of Things in the beginning that had to do also with meat. Later, we elaborated on meat consumption and production around the world.
+
+After 3 consecutive weeks, we had to take initiative in deciding what to work with for our project, so we picked the topic of meat. As a product of our project we aim to present a map with a list of countries for which we have a value for both consumption and production on the measure - kilogram per capita. As well as a graph with tendencies of the same values for the next few years.
+
 ## Meetings
 
 In this section we will go over the meetings we have had with our Innovation and Entrepreneurship group.
