@@ -33,12 +33,6 @@ Billing set at: **1000 DKK / HOUR** *per person*
 | Date | Description | Hours | Price DKK |
 | ------------- | ------------- | ------------- | ------------- |
 | 31/10/2018 | Introduction meeting | 2 | Free |
-| 07/11/2018 | First official meeting, update meeting | 0,5 | 1000 |
-| 12/11/2018 | Sharing our results + subject change to RFID and LIFI | 0,5 | 1000 |
-| 14/11/2018 | Sharing our results + subject change to barcodes and foodwaste | 0,5 | 1000 |
-| 19/11/2018 | Sharing our results + subject change to countries with most frequest RFID use | 0,5 | 1000 |
-| 22/11/2018 | Subject change, going back to meat production and consumption | 0,5 | 1000 |
-| 29/11/2018 | Sharing our results, planning for delivery | 1 | 1000 |
 
 **Work**
 
