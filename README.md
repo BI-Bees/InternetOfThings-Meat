@@ -188,7 +188,7 @@ Below is listed all the different datasources used in this project:
 
 We have various datasets that can be in the dataset folder. 
 
-![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/dataset.png "Dataset")
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/datasets.png "Dataset")
 
 ### Formatting original datasets
 
