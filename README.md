@@ -31,8 +31,6 @@ Billing set at: **1000 DKK / HOUR** *per person*
 
 **Meetings**
 | Date | Description | Hours | Price DKK |
-| ------------- | ------------- | ------------- | ------------- |
-| 31/10/2018 | Introduction meeting | 2 | Free |
 
 **Work**
 
