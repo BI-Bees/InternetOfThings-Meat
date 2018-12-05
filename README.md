@@ -13,17 +13,15 @@
 
 # Introduction
 
-Goes here...
-
-A project revolving around production and consumption of meat....
+A project revolving around production and consumption of meat, and the process it took us to get to the result. 
 
 # Process
 
 ## Meetings
 
-In this section we will go over the meetings we have had with our Innovation and Entrepreneurship group. 
+In this section we will go over the meetings we have had with our Innovation and Entrepreneurship group.
 
-skriv her noget om at vi efter hvert møde brugte tid på at finde data om deres nye emner
+After each of our meetings we have taken what was decided and tried to find data supporting their ideas.
 
 ### 31/10/2018 - Introduction meeting 
 
@@ -79,7 +77,34 @@ We agreed upon using Facebook Messenger as a contact forum. The decision was mad
 
 # Contract
 
-Goes here...
+This is the contract agreed upon from both Software-Developers and Innovation & Entrepreneurshipers.
+
+## Product
+
+The final product should show a world-map with different countries highlighed showing meat production and consumption, from a specific year within 1991-2013, based on data accumulated from OECD and FAOSTAT datasets. A non-specific chart should also be shown showcasing the evolution of total both meat production and consumption within the specified years. 
+
+
+## Pricing
+
+Consulting price set for: **1000 DKK / HOUR** *per person*
+
+## Team
+
+**Software-Developers**
+
+- Philip West Christiansen
+- Plamen Getsov
+
+**Innovation & Entrepreneurship**
+
+- Selina Açıkel
+- Betul Dal
+- Hamid Popal
+- Mohammed Samrawi
+
+## Delivery date
+
+Delivery is scheduled for friday the **7th** of **december 2018** at **12 am**.
 
 # Billing
 
