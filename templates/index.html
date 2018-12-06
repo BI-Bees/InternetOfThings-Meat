@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/data">Line-chart</a>
+        <a href="/bar">Bar-chart</a>
+        <div class="dropdown">
+            <button class="dropbtn">World-map
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/map/1991">1991</a>
+                <a href="/map/1992">1992</a>
+                <a href="/map/1993">1993</a>
+                <a href="/map/1994">1994</a>
+                <a href="/map/1995">1995</a>
+                <a href="/map/1996">1996</a>
+                <a href="/map/1997">1997</a>
+                <a href="/map/1998">1998</a>
+                <a href="/map/1999">1999</a>
+                <a href="/map/2000">2000</a>
+                <a href="/map/2001">2001</a>
+                <a href="/map/2002">2002</a>
+                <a href="/map/2003">2003</a>
+                <a href="/map/2004">2004</a>
+                <a href="/map/2005">2005</a>
+                <a href="/map/2006">2006</a>
+                <a href="/map/2007">2007</a>
+                <a href="/map/2008">2008</a>
+                <a href="/map/2009">2009</a>
+                <a href="/map/2010">2010</a>
+                <a href="/map/2011">2011</a>
+                <a href="/map/2012">2012</a>
+                <a href="/map/2013">2013</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Pie-chart
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/pie/1991">1991</a>
+                <a href="/pie/1992">1992</a>
+                <a href="/pie/1993">1993</a>
+                <a href="/pie/1994">1994</a>
+                <a href="/pie/1995">1995</a>
+                <a href="/pie/1996">1996</a>
+                <a href="/pie/1997">1997</a>
+                <a href="/pie/1998">1998</a>
+                <a href="/pie/1999">1999</a>
+                <a href="/pie/2000">2000</a>
+                <a href="/pie/2001">2001</a>
+                <a href="/pie/2002">2002</a>
+                <a href="/pie/2003">2003</a>
+                <a href="/pie/2004">2004</a>
+                <a href="/pie/2005">2005</a>
+                <a href="/pie/2006">2006</a>
+                <a href="/pie/2007">2007</a>
+                <a href="/pie/2008">2008</a>
+                <a href="/pie/2009">2009</a>
+                <a href="/pie/2010">2010</a>
+                <a href="/pie/2011">2011</a>
+                <a href="/pie/2012">2012</a>
+                <a href="/pie/2013">2013</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="country_map">
+        <embed type="image/svg+xml" src={{ data|safe }} />
+    </div>
+
+</body>
+
+</html>
