@@ -15,6 +15,6 @@ dependencies:
   - dask
   - lxml
   - pygal
-  - csv
+  
  
 
