@@ -195,7 +195,7 @@ Line chart shows you a line chart with average meat production and consumption o
 
 Bar chart shows you a bar chart with average meat production and consumption over the years from 1991-2013 in kg/per/capita. 
 
-![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/web_line_chart.png "line_chart")
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/web_bar_chart.png "line_chart")
 
 *** **World-map:** ***
 
