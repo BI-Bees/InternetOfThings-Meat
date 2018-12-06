@@ -4,11 +4,33 @@
 
 # Table of Contents (TODO)
 <!--ts-->
-  * [Opstartsguide](#opstartsguide)  
-      * [Diagram](#diagram)   
-      * [Overordnet design](#overordnet-design)   
+  * [Introduction](#introduction)  
+  * [Process](#process)    
+      * [Collaboration summary](#collaboration-summary)   
+      * [Meetings](#meetings)   
+          * [31/10/2018 - Introduction meeting](#31102018---introduction-meeting)
+          * [07/11/2018 - First official meeting](#07/11/2018-first-official-meeting)
+          * [12/11/2018 - Showing of results, subject change RFID and LIFI](#12/11/2018-showing-of-results,-subject-change-RFID-and-LIFI)
           * [Get Credit Score](#get-credit-score)
+          * [Get Credit Score](#get-credit-score)
+          * [Get Credit Score](#get-credit-score)
+          * [Get Credit Score](#get-credit-score)
+      * [Diagram](#diagram) 
   * [Opstartsguide](#opstartsguide) 
+      * [Diagram](#diagram)   
+      * [Diagram](#diagram)   
+      * [Diagram](#diagram)   
+      * [Diagram](#diagram)
+  * [Opstartsguide](#opstartsguide) 
+  * [Opstartsguide](#opstartsguide) 
+  * [Opstartsguide](#opstartsguide) 
+  * [Opstartsguide](#opstartsguide) 
+  * [Opstartsguide](#opstartsguide)                                      
+      * [Diagram](#diagram)   
+          * [Get Credit Score](#get-credit-score)
+          * [Get Credit Score](#get-credit-score)
+          * [Get Credit Score](#get-credit-score) 
+      * [Diagram](#diagram)                                     
 <!--ts-->
 
 # Introduction
@@ -333,9 +355,9 @@ def generate_map(year):
                 worldmap_chart.add(row[2], {
                 str(row[6].lower()): [row[4], row[5]]
             })
-        worldmap_chart.render_in_browser()
+        return worldmap_chart
 ```
-*** *Map.ipynb* ***
+*** *server.py* ***
 
 The *def* takes in a *year* parameter and then plots all countries in the dataset and their production vs consumption on a big world-map, as shown below:
 
@@ -394,6 +416,4 @@ We have hosted our solution on a digital ocean server that is running *python fl
 
 http://165.227.137.37:5000/
 
-# Other sources
-
-I am thinking here we add all of our other sources we found and the google queries etc?
+We have a simple *index.html* file that renders the page and a *server.py* that created the server. 
