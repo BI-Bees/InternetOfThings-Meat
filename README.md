@@ -2,35 +2,35 @@
 ##### Philip West Christiansen & Plamen Getsov
 ##### Fall 2018 - Handin: 07/12/2018
 
-# Table of Contents (TODO)
+# Table of Contents
 <!--ts-->
   * [Introduction](#introduction)  
   * [Process](#process)    
       * [Collaboration summary](#collaboration-summary)   
       * [Meetings](#meetings)   
           * [31/10/2018 - Introduction meeting](#31102018---introduction-meeting)
-          * [07/11/2018 - First official meeting](#07/11/2018-first-official-meeting)
+          * [07/11/2018 - First official meeting](#07112018---first-official-meeting)
           * [12/11/2018 - Showing of results, subject change RFID and LIFI](#12/11/2018-showing-of-results,-subject-change-RFID-and-LIFI)
-          * [Get Credit Score](#get-credit-score)
-          * [Get Credit Score](#get-credit-score)
-          * [Get Credit Score](#get-credit-score)
-          * [Get Credit Score](#get-credit-score)
-      * [Diagram](#diagram) 
-  * [Opstartsguide](#opstartsguide) 
-      * [Diagram](#diagram)   
-      * [Diagram](#diagram)   
-      * [Diagram](#diagram)   
-      * [Diagram](#diagram)
-  * [Opstartsguide](#opstartsguide) 
-  * [Opstartsguide](#opstartsguide) 
-  * [Opstartsguide](#opstartsguide) 
-  * [Opstartsguide](#opstartsguide) 
-  * [Opstartsguide](#opstartsguide)                                      
-      * [Diagram](#diagram)   
-          * [Get Credit Score](#get-credit-score)
-          * [Get Credit Score](#get-credit-score)
-          * [Get Credit Score](#get-credit-score) 
-      * [Diagram](#diagram)                                     
+          * [14/11/2018 - Showing of results, subject change foodwaste](#14112018---showing-of-results-subject-change-foodwaste)
+          * [19/11/2018 - Showing our results, subject change to Countries with most frequent RFID use](#19112018---showing-our-results-subject-change-to-countries-with-most-frequent-rfid-use)
+          * [22/11/2018 - Subject change back to original subject](#22112018---subject-change-back-to-original-subject)
+          * [29/11/2018 - Update meeting](#29112018---update-meeting)
+      * [Contact forum](#contact-forum) 
+  * [Contract](#contract) 
+      * [Product](#product)   
+      * [Pricing](#pricing)   
+      * [Team](#team)   
+      * [Delivery date](#delivery-date)
+  * [Billing](#billing) 
+  * [Final product](#final-product) 
+  * [User documentation](#user-documentation) 
+  * [Data sources](#data-sources) 
+  * [Technical documentation](#technical-documentation)                                      
+      * [Datasets formatting](#datasets-formatting)   
+          * [Formatting original datasets](#formatting-original-datasets)
+          * [joining the datasets](#joining-the-datasets)
+          * [Graphs](#graphs) 
+      * [Showing our product](#showing-our-product)                                     
 <!--ts-->
 
 # Introduction
@@ -315,7 +315,7 @@ def create_csv():
 
 The way we create the *modified_consumption.csv* file is almost the same, see *consumption_script.py* for furthermore reading. 
 
-### joining the datasets
+### Joining the datasets
 
 We now want to join our *modified_production.csv* and *modified_consumption.csv* files. We want to do this because we actually have different countries and different years in the two files. *modified_production.csv* have more countries listed than *modified_consumption.csv* for example, and we do not want this. 
 
