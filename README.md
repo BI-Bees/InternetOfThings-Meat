@@ -132,6 +132,10 @@ Consulting price set for: **1000 DKK / HOUR** *per person*
 - Hamid Popal
 - Mohammed Samrawi
 
+## Contact
+
+If the website is down or you have any questions contact Philip West at pwestdk@gmail.com.
+
 ## Delivery date
 
 Delivery is scheduled for friday the **7th** of **december 2018** at **12 am**.
