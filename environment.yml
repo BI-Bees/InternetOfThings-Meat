@@ -14,5 +14,7 @@ dependencies:
   - bokeh
   - dask
   - lxml
+  - pygal
+  - csv
  
 
