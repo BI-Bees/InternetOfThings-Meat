@@ -3,4 +3,5 @@ numpy==1.13.1
 matplotlib==2.0.2 
 seaborn==0.8.1
 pygal==2.4.0
+pygal-maps-world==1.0.2
 lxml==4.2.5
