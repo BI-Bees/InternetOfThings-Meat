@@ -157,11 +157,57 @@ Billing set at: **1000 DKK / HOUR** *per person*
 
 # Final product
 
-Goes here...
+Our final product can be found by going to the following link:
+
+http://165.227.137.37:5000/
+
+The section below describes how to use the website. 
     
 # User documentation
 
-User link: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/BI-Bees/InternetOfThings-Meat/master)
+This section descripbes how to use the website. 
+
+**Access website**
+
+Go to the following link:
+
+http://165.227.137.37:5000/
+
+**Navigation bar:**
+
+At the top of the page you see a navigation bar. 
+
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/web_navigation.png "navigation")
+
+This is used to navigate through the page.
+
+*** **Home:** ***
+
+Home takes you home to a blank page. 
+
+*** **Line chart:** ***
+
+Line chart shows you a line chart with average meat production and consumption over the years from 1991-2013 in kg/per/capita. 
+
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/web_line_chart.png "line_chart")
+
+*** **Bar chart:** ***
+
+Bar chart shows you a bar chart with average meat production and consumption over the years from 1991-2013 in kg/per/capita. 
+
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/web_line_chart.png "line_chart")
+
+*** **World-map:** ***
+
+When hovering over the world map a *dropdown* list shows with years ranging from 1991-2013. Pick a desired year and you will get shown an interactive map that shows meat production and consumption of kg/per/capita in a specific country when hovering with your mouse over a specific country.
+
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/web_world_map.png "Worldmap")
+
+*** **Pie chart:** ***
+
+When hovering over the pie chart a *dropdown* list shows with years ranging from 1991-2013. Pick a desired year and you will get shown a pie chart that shows the average meat production and consumption of kg/per/capita in all countries from our dataset.
+
+![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/web_pie_chart.png "piechart")
 
 # Data sources
 
@@ -341,6 +387,12 @@ def line_chart():
 ![alt text](https://github.com/BI-Bees/InternetOfThings-Meat/blob/master/images/linechart.png "Merged Dataset")
 
 This now solves our other problem.
+
+## Showing our product
+
+We have hosted our solution on a digital ocean server that is running *python flask*. It can be accesed by going to the following link: 
+
+http://165.227.137.37:5000/
 
 # Other sources
 
